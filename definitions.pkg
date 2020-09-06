@@ -1,0 +1,15 @@
+`ifndef DEFS_DONE
+    `define DEFS_DONE
+
+    package definitions;
+        typedef enum  {ADD,SUB} opcode_t;
+    
+        typedef struct {
+            logic [3:0] A, B;
+            opcode_t opcode;
+        } instruction_t;
+    endpackage
+
+    import definitions::*;
+
+`endif
